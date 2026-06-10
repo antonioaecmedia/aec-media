@@ -226,15 +226,48 @@ export default function Home() {
             Discover the biggest opportunities to generate more leads.
           </p>
 
-          <div className="mt-8">
-            <a
-              href="https://calendly.com"
-              target="_blank"
-              className="bg-black text-white px-8 py-4 rounded-xl inline-block"
-            >
-              Book Audit Call
-            </a>
-          </div>
+          <form
+  action="https://formspree.io/f/mkoavoep"
+  method="POST"
+  className="mt-8 space-y-4"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    className="w-full border p-4 rounded-xl"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+    className="w-full border p-4 rounded-xl"
+  />
+
+  <input
+    type="text"
+    name="company"
+    placeholder="Company Name"
+    className="w-full border p-4 rounded-xl"
+  />
+
+  <textarea
+    name="message"
+    placeholder="Tell us about your business"
+    rows={5}
+    className="w-full border p-4 rounded-xl"
+  />
+
+  <button
+    type="submit"
+    className="bg-black text-white px-8 py-4 rounded-xl"
+  >
+    Get My Free Audit
+  </button>
+</form>
 
         </div>
 
