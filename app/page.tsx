@@ -219,12 +219,18 @@ export default function Home() {
         <div className="bg-white text-black rounded-[40px] p-12">
 
           <h2 className="text-4xl md:text-5xl font-bold">
-            Book A Free Growth Audit
+            Get Your Free Growth Audit
           </h2>
 
           <p className="mt-4 text-zinc-600">
-            Discover the biggest opportunities to generate more leads.
+            Receive a personalised review of your website, SEO and lead generation opportunities.
           </p>
+          <div className="mt-6 text-sm text-zinc-600 space-y-2">
+  <div>✓ Website Review</div>
+  <div>✓ Local SEO Review</div>
+  <div>✓ Google Business Profile Review</div>
+  <div>✓ Lead Generation Opportunities</div>
+</div>
 
           <form
   action="https://formspree.io/f/mkoavoep"
@@ -232,47 +238,66 @@ export default function Home() {
   className="mt-8 space-y-4"
 >
   <input
-    type="text"
-    name="name"
-    placeholder="Your Name"
-    required
-    className="w-full border p-4 rounded-xl"
-  />
+  type="text"
+  name="name"
+  placeholder="Your Name"
+  required
+  className="w-full border p-4 rounded-xl"
+/>
 
-  <input
-    type="email"
-    name="email"
-    placeholder="Email Address"
-    required
-    className="w-full border p-4 rounded-xl"
-  />
+<input
+  type="email"
+  name="email"
+  placeholder="Email Address"
+  required
+  className="w-full border p-4 rounded-xl"
+/>
 
-  <input
-    type="text"
-    name="company"
-    placeholder="Company Name"
-    className="w-full border p-4 rounded-xl"
-  />
+<input
+  type="text"
+  name="business"
+  placeholder="Business Name"
+  required
+  className="w-full border p-4 rounded-xl"
+/>
 
-  <textarea
-    name="message"
-    placeholder="Tell us about your business"
-    rows={5}
-    className="w-full border p-4 rounded-xl"
-  />
+<input
+  type="text"
+  name="website"
+  placeholder="Website URL"
+  required
+  className="w-full border p-4 rounded-xl"
+/>
 
-  <button
-    type="submit"
-    className="bg-black text-white px-8 py-4 rounded-xl"
-  >
-    Get My Free Audit
-  </button>
+<select
+  name="budget"
+  className="w-full border p-4 rounded-xl"
+>
+  <option value="">Monthly Marketing Budget</option>
+  <option value="0-500">€0-500</option>
+  <option value="500-1000">€500-1,000</option>
+  <option value="1000-3000">€1,000-3,000</option>
+  <option value="3000+">€3,000+</option>
+</select>
+
+<textarea
+  name="challenge"
+  placeholder="What's your biggest marketing challenge right now?"
+  rows={4}
+  className="w-full border p-4 rounded-xl"
+/><button
+  type="submit"
+  className="bg-black text-white px-8 py-4 rounded-xl"
+>
+  Get My Free Audit
+</button>
+
 </form>
 
-        </div>
+</div>
 
-      </section>
+</section>
 
-    </main>
+</main>
   );
 }
